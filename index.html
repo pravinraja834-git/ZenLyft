@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZENLYFT | Digital Services & Solutions</title>
+    <meta name="description"
+        content="Zenlyft provides premium digital services: Web Development, App Development, and UI/UX Design.">
+    <link rel="icon" href="./Images/ZenLyft-logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="./Images/ZenLyft-logo.png">
+    <meta property="og:image" content="./Images/ZenLyft-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor-dot" id="cursor-dot"></div>
+    <div class="custom-cursor-outline" id="cursor-outline"></div>
+
+    <!-- Background Orbs -->
+    <div class="bg-orb-1" aria-hidden="true"></div>
+    <div class="bg-orb-2" aria-hidden="true"></div>
+    <div class="bg-orb-3" aria-hidden="true"></div>
+
+    <!-- ====== NAVBAR ====== -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a href="#home" class="logo">
+                <img src="./Images/ZenLyft-logo.png" alt="" aria-hidden="true" class="site-logo">
+                <span class="brand-text">ZENLYFT</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <a href="mailto:contact.zenlyft@gmail.com" class="btn-primary nav-cta">
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Hire Us
+            </a>
+
+            <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+            <a href="mailto:contact.zenlyft@gmail.com" class="btn-primary"
+                style="text-align:center; margin-top:0.5rem;">Hire Us</a>
+        </div>
+    </nav>
+
+    <!-- ====== 1. HOME ====== -->
+    <section class="hero" id="home">
+        <!-- Animated grid lines -->
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-inner">
+            <div class="badge reveal-fade" style="--d:0s">
+                <span class="badge-dot"></span>
+                Available for new projects
+            </div>
+            <h1 class="hero-title reveal-fade" style="--d:0.15s">
+                Elevate Your<br>
+                <span class="grad-text">Digital Presence</span>
+            </h1>
+            <p class="hero-sub reveal-fade" style="--d:0.3s">
+                We craft stunning web experiences, powerful mobile applications, and
+                intuitive user interfaces that drive your business forward.
+            </p>
+            <div class="btn-row reveal-fade" style="--d:0.45s">
+                <a href="#services" class="btn-primary">
+                    <i class="fa-solid fa-rocket" aria-hidden="true"></i> Explore Services
+                </a>
+                <a href="#contact" class="btn-ghost">
+                    Let's Talk <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+            <!-- Scroll cue -->
+            <div class="scroll-cue reveal-fade" style="--d:0.8s" aria-hidden="true">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span>Scroll to explore</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 2. ABOUT ====== -->
+    <section id="about">
+        <div class="section-inner">
+            <div class="about-grid">
+                <div class="about-visual reveal-left">
+                    <div class="stat-card card">
+                        <div class="stat-grid">
+                            <div class="stat-cell">
+                                <div class="stat-num counter" data-target="100">0</div>
+                                <div class="stat-unit">%</div>
+                                <div class="stat-desc">Client Satisfaction</div>
+                            </div>
+                            <div class="stat-cell">
+                                <div class="stat-num counter" data-target="1">0</div>
+                                <div class="stat-desc">Project Delivered</div>
+                            </div>
+                            <div class="stat-cell full">
+                                <div class="stat-icon"><i class="fa-solid fa-microchip"></i></div>
+                                <div class="stat-num-text">Innovation Driven</div>
+                                <div class="stat-desc">We use the latest tech stacks to ensure your products are
+                                    future-proof.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-text reveal-right">
+                    <span class="section-label">About Us</span>
+                    <h2 class="section-title">Who is <span class="grad-text">Zenlyft?</span></h2>
+                    <p>Zenlyft is a forward-thinking technology company specialising in comprehensive digital solutions.
+                        We believe in transforming complex problems into elegant, user-centric experiences.</p>
+                    <p>Our team of passionate developers and designers work collaboratively to bring your vision to life
+                        — ensuring every project is visually stunning, highly performant, and perfectly aligned with
+                        your goals.</p>
+                    <div class="mission-row">
+                        <div class="icon-circle"><i class="fa-solid fa-rocket"></i></div>
+                        <div>
+                            <h4>Our Mission</h4>
+                            <p>To uplift businesses through digital innovation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 3. SERVICES ====== -->
+    <section id="services">
+        <div class="section-inner">
+            <div class="section-header reveal-up">
+                <span class="section-label">Our Offerings</span>
+                <h2 class="section-title">What We <span class="grad-text">Do</span></h2>
+            </div>
+            <div class="services-grid">
+                <div class="card service-card reveal-up" style="--d:0s">
+                    <div class="service-glow" aria-hidden="true"></div>
+                    <div class="service-icon icon-1"><i class="fa-solid fa-code"></i></div>
+                    <h4>Web Development</h4>
+                    <p>Custom, responsive, and high-performance websites built with modern frameworks to engage your
+                        audience and drive conversions.</p>
+                    <div class="service-footer">
+                        <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Node.js</span>
+                    </div>
+                </div>
+                <div class="card service-card reveal-up" style="--d:0.12s">
+                    <div class="service-glow" aria-hidden="true"></div>
+                    <div class="service-icon icon-2"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h4>App Development</h4>
+                    <p>Cross-platform and native mobile applications that provide seamless experiences on both iOS and
+                        Android devices.</p>
+                    <div class="service-footer">
+                        <span class="tag">Flutter</span><span class="tag">React Native</span><span
+                            class="tag">iOS</span>
+                    </div>
+                </div>
+                <div class="card service-card reveal-up" style="--d:0.24s">
+                    <div class="service-glow" aria-hidden="true"></div>
+                    <div class="service-icon icon-3"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h4>UI/UX Design</h4>
+                    <p>Intuitive, user-centred designs that not only look beautiful but also enhance usability and
+                        overall user satisfaction.</p>
+                    <div class="service-footer">
+                        <span class="tag">Figma</span><span class="tag">Framer</span><span
+                            class="tag">Prototyping</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 4. PROJECTS ====== -->
+    <section id="projects">
+        <div class="section-inner">
+            <div class="section-header reveal-up">
+                <span class="section-label">Featured Work</span>
+                <h2 class="section-title">Our <span class="grad-text">Projects</span></h2>
+            </div>
+            <div class="card project-showcase-card reveal-up">
+                <!-- Header Section -->
+                <div class="project-showcase-header">
+                    <div class="project-showcase-num">01</div>
+                    <div class="project-showcase-meta">
+                        <span class="project-showcase-tag">WEB APPLICATION</span>
+                        <h3 class="project-showcase-title">HOSTEL OUTPASS SYSTEM</h3>
+                    </div>
+                </div>
+
+                <!-- Action Button -->
+                <div class="project-showcase-action">
+                    <a href="#contact" class="btn-live-project">
+                        LIVE PROJECT
+                    </a>
+                </div>
+
+                <!-- Display Section -->
+                <div class="project-showcase-display">
+                    <!-- Left Side: Rounded Info/Feature Cards -->
+                    <div class="display-screen-left">
+                        <div class="mock-card">
+                            <span class="mock-card-label">Outpass Management</span>
+                            <p class="mock-card-desc">A smart digital solution for secure, fast, and paperless outpass
+                                management.</p>
+                            <div class="mock-card-stats">
+                                <span class="stat-badge"><i class="fa-solid fa-bolt"></i> Instant Approval</span>
+                                <span class="stat-badge"><i class="fa-solid fa-shield-halved"></i> 100% Secure</span>
+                            </div>
+                        </div>
+                        <div class="mock-card">
+                            <span class="mock-card-label">Platform Features</span>
+                            <ul class="mock-card-list">
+                                <li><i class="fa-solid fa-circle-check"></i> Multi-tier Dashboard Roles</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Real-time status notifications</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Actual Screen Screenshot inside a rounded browser frame -->
+                    <div class="display-screen-right">
+                        <div class="mock-browser">
+                            <div class="mock-browser-bar">
+                                <span class="browser-dot red"></span>
+                                <span class="browser-dot yellow"></span>
+                                <span class="browser-dot green"></span>
+                                <span class="browser-address">zenlyft.com/hostel-outpass</span>
+                            </div>
+                            <img src="./Images/Screenshot 2026-07-06 203008.png"
+                                alt="Dashboard of the Hostel Outpass System" class="browser-img" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 5. TEAM ====== -->
+    <section id="team">
+        <div class="section-inner">
+            <div class="section-header reveal-up">
+                <span class="section-label">Our Leaders</span>
+                <h2 class="section-title">Meet the <span class="grad-text">Team</span></h2>
+            </div>
+            <div class="team-grid">
+                <!-- Niresh -->
+                <div class="team-showcase-card reveal-up" style="--d:0s">
+                    <img src="./Images/niresh.png"
+                        alt="NireshSenthoor" class="team-showcase-img">
+                    <div class="team-showcase-overlay">
+                        <div class="team-showcase-info">
+                            <div class="team-showcase-name-row">
+                                <span class="team-showcase-name">NireshSenthoor</span>
+                                <a href="https://www.linkedin.com/in/niresh-senthoor-80484b365/" target="_blank" rel="noopener noreferrer" class="team-linkedin-link" aria-label="LinkedIn Profile">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="https://wa.me/+918015929139" target="_blank" rel="noopener noreferrer" class="team-whatsapp-link" aria-label="WhatsApp Link">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                            <span class="team-showcase-role">Founder</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pravin -->
+                <div class="team-showcase-card reveal-up" style="--d:0.12s">
+                    <img src="./Images/pravinraj.jpeg" alt="Pravinraj Raja" class="team-showcase-img">
+                    <div class="team-showcase-overlay">
+                        <div class="team-showcase-info">
+                            <div class="team-showcase-name-row">
+                                <span class="team-showcase-name">Pravinraj Raja</span>
+                                <a href="https://www.linkedin.com/in/pravinrajraja/" target="_blank" rel="noopener noreferrer" class="team-linkedin-link" aria-label="LinkedIn Profile">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="https://wa.me/+919498830875" target="_blank" rel="noopener noreferrer" class="team-whatsapp-link" aria-label="WhatsApp Link">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                            <span class="team-showcase-role">Co-Founder</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sanjay -->
+                <div class="team-showcase-card reveal-up" style="--d:0.24s">
+                    <img src="./Images/sanjay.jpeg" alt="Sanjay S" class="team-showcase-img">
+                    <div class="team-showcase-overlay">
+                        <div class="team-showcase-info">
+                            <div class="team-showcase-name-row">
+                                <span class="team-showcase-name">Sanjay S</span>
+                                <a href="https://www.linkedin.com/in/sanjay-s-018-code/" target="_blank" rel="noopener noreferrer" class="team-linkedin-link" aria-label="LinkedIn Profile">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="https://wa.me/+918144184660" target="_blank" rel="noopener noreferrer" class="team-whatsapp-link" aria-label="WhatsApp Link">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                            <span class="team-showcase-role">Co-Founder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 6. CONTACT ====== -->
+    <section id="contact">
+        <div class="section-inner">
+            <div class="contact-wrap">
+                <div class="section-header reveal-up">
+                    <span class="section-label">Get in Touch</span>
+                    <h2 class="section-title">Ready to <span class="grad-text">Elevate</span> your business?</h2>
+                    <p class="section-sub">Let's discuss how Zenlyft can help you achieve your digital goals.</p>
+                </div>
+                <div class="contact-cards">
+                    <a href="mailto:contact.zenlyft@gmail.com" class="card contact-card reveal-up" style="--d:0s"
+                        id="contact-email">
+                        <div class="contact-icon ci-email"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <span class="contact-label">Email Us</span>
+                            <span class="contact-val">contact.zenlyft@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/zenlyft-corporation/" target="_blank" rel="noopener noreferrer"
+                        class="card contact-card reveal-up" style="--d:0.1s" id="contact-linkedin">
+                        <div class="contact-icon ci-li"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <div>
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-val">Zenlyft Corporation</span>
+                        </div>
+                    </a>
+                    <a href="https://instagram.com/ecolift_systems" target="_blank" rel="noopener noreferrer"
+                        class="card contact-card reveal-up" style="--d:0.2s" id="contact-instagram">
+                        <div class="contact-icon ci-ig"><i class="fa-brands fa-instagram"></i></div>
+                        <div>
+                            <span class="contact-label">Instagram</span>
+                            <span class="contact-val">@ecolift_systems</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="footer-inner">
+
+                <!-- Brand Column -->
+                <div class="footer-col footer-brand">
+                    <a href="#home" class="logo footer-logo">
+                        <img src="./Images/ZenLyft-logo.png" alt="" aria-hidden="true" class="site-logo footer-site-logo">
+                        <span class="brand-text footer-brand-text">ZENLYFT</span>
+                    </a>
+                    <p class="footer-tagline">
+                        Crafting digital experiences that elevate brands and drive business growth.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="mailto:contact.zenlyft@gmail.com" class="fsocial-btn" aria-label="Email Zenlyft"
+                            title="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/zenlyft-corporation/" target="_blank"
+                            rel="noopener noreferrer" class="fsocial-btn li" aria-label="LinkedIn" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://instagram.com/ecolift_systems" target="_blank" rel="noopener noreferrer"
+                            class="fsocial-btn ig" aria-label="Instagram" title="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Navigation Column -->
+                <div class="footer-col">
+                    <h5 class="footer-heading">Navigation</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-layer-group"></i> Services</a></li>
+                        <li><a href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+                        <li><a href="#team"><i class="fa-solid fa-users"></i> Team</a></li>
+                        <li><a href="#contact"><i class="fa-solid fa-headset"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Column -->
+                <div class="footer-col">
+                    <h5 class="footer-heading">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#services"><i class="fa-solid fa-code"></i> Web Development</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-mobile-screen"></i> App Development</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-pen-nib"></i> UI/UX Design</a></li>
+                        <li><a href="#projects"><i class="fa-solid fa-diagram-project"></i> Hostel Outpass System</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="footer-col">
+                    <h5 class="footer-heading" style="margin-top:1.5rem;">Team</h5>
+                    <ul class="footer-team-list">
+                        <li>
+                            <img src="./Images/niresh.png"
+                                alt="Niresh">
+                            <div>
+                                <span>Niresh Senthoor</span>
+                                <small>Founder</small>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./Images/pravinraj.jpeg" alt="Pravin">
+                            <div>
+                                <span>Pravin Raj Raja</span>
+                                <small>Co-Founder</small>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./Images/sanjay.jpeg" alt="Sanjay">
+                            <div>
+                                <span>Sanjay</span>
+                                <small>Co-Founder</small>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-inner">
+                <p class="footer-copy">
+                    &copy; <span id="year"></span> Zenlyft Corporation. All rights reserved.
+                </p>
+                <div class="footer-badges">
+                    <span class="f-badge"><i class="fa-solid fa-shield-halved"></i> Trusted</span>
+                    <span class="f-badge"><i class="fa-solid fa-bolt-lightning"></i> Fast Delivery</span>
+                    <span class="f-badge"><i class="fa-solid fa-star"></i> Top Rated</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
