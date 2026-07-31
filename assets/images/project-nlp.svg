@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400">
+  <rect width="640" height="400" fill="#F8F8FC"/>
+  <circle cx="200" cy="200" r="100" fill="rgba(61,58,140,0.08)"/>
+  <circle cx="440" cy="200" r="100" fill="rgba(124,111,224,0.08)"/>
+  <circle cx="320" cy="200" r="100" fill="rgba(91,79,207,0.12)" stroke="#3D3A8C" stroke-width="2"/>
+  <text x="320" y="208" text-anchor="middle" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#3D3A8C">NLP Engine</text>
+</svg>

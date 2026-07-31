@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400">
+  <rect width="640" height="400" fill="#F8F8FC"/>
+  <!-- Phone Frame -->
+  <rect x="230" y="30" width="180" height="340" rx="28" fill="#1A1A2E" stroke="#3D3A8C" stroke-width="3"/>
+  <rect x="240" y="45" width="160" height="310" rx="20" fill="white"/>
+  <!-- Notch -->
+  <rect x="285" y="52" width="70" height="12" rx="6" fill="#1A1A2E"/>
+  <!-- App content -->
+  <circle cx="320" cy="120" r="30" fill="rgba(124,111,224,0.2)"/>
+  <path d="M310 120 L318 128 L332 112" stroke="#7C6FE0" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <rect x="260" y="170" width="120" height="12" rx="6" fill="#E7E7EF"/>
+  <rect x="260" y="195" width="90" height="10" rx="5" fill="#F0F0F8"/>
+  <rect x="260" y="220" width="120" height="40" rx="8" fill="rgba(61,58,140,0.08)"/>
+  <rect x="260" y="270" width="120" height="40" rx="8" fill="rgba(91,79,207,0.08)"/>
+</svg>

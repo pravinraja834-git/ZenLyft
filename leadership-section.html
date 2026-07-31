@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Leadership Team | ZenLyft</title>
+  <link rel="icon" href="assets/logo/zenlyft-logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <style>
+    /* ============================
+       RESET & VARIABLES
+       ============================ */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #43377F;
+      --secondary: #5B4AA2;
+      --accent: #7868C6;
+      --bg-white: #FFFFFF;
+      --bg-light: #F8F9FC;
+      --border: #ECECEC;
+      --text: #1F2937;
+      --text-light: #6B7280;
+      --gradient: linear-gradient(135deg, #43377F, #7868C6);
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+      --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.12);
+      --shadow-glow: 0 8px 32px rgba(67, 55, 127, 0.18);
+      --radius: 20px;
+      --transition: 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text);
+      background: var(--bg-white);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ============================
+       LEADERSHIP SECTION
+       ============================ */
+    .leadership-section {
+      padding: 140px 0;
+      background: var(--bg-white);
+      overflow: hidden;
+    }
+
+    .leadership-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ============================
+       SECTION HEADER
+       ============================ */
+    .leadership-header {
+      text-align: center;
+      margin-bottom: 72px;
+    }
+
+    .leadership-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .leadership-label::before,
+    .leadership-label::after {
+      content: '';
+      width: 24px;
+      height: 1.5px;
+      background: var(--gradient);
+      border-radius: 2px;
+    }
+
+    .leadership-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.15;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+
+    .leadership-title .gradient-text {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .leadership-desc {
+      font-size: 17px;
+      color: var(--text-light);
+      max-width: 580px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ============================
+       LEADERS GRID
+       ============================ */
+    .leaders-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+    }
+
+    @media (max-width: 1024px) {
+      .leaders-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .leaders-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 0 auto;
+      }
+
+      .leadership-section {
+        padding: 80px 0;
+      }
+
+      .leadership-header {
+        margin-bottom: 48px;
+      }
+    }
+
+    /* ============================
+       LEADER CARD
+       ============================ */
+    .leader-card {
+      position: relative;
+      background: var(--bg-white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: all var(--transition);
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .leader-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(67, 55, 127, 0.03), rgba(120, 104, 198, 0.03));
+      opacity: 0;
+      transition: opacity var(--transition);
+      pointer-events: none;
+    }
+
+    .leader-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--primary);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .leader-card:hover::before {
+      opacity: 1;
+    }
+
+    .leader-card:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 3px;
+    }
+
+    /* ============================
+       IMAGE WRAPPER
+       ============================ */
+    .leader-img-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      background: var(--bg-light);
+    }
+
+    .leader-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(20%);
+      transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      transform: scale(1);
+    }
+
+    .leader-card:hover .leader-img {
+      filter: grayscale(0%);
+      transform: scale(1.05);
+    }
+
+    /* Skeleton Loading */
+    .leader-img-wrap.loading::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, var(--bg-light) 25%, #e8e8f0 50%, var(--bg-light) 75%);
+      background-size: 200% 100%;
+      animation: skeleton-shimmer 1.5s infinite;
+      border-radius: 14px;
+    }
+
+    @keyframes skeleton-shimmer {
+      0% {
+        background-position: 200% 0;
+      }
+
+      100% {
+        background-position: -200% 0;
+      }
+    }
+
+    .leader-img-wrap.loaded::after {
+      display: none;
+    }
+
+    /* Image Overlay */
+    .leader-img-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(67, 55, 127, 0.85) 0%, rgba(67, 55, 127, 0.3) 40%, transparent 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      border-radius: 14px;
+      pointer-events: none;
+    }
+
+    .leader-card:hover .leader-img-overlay {
+      opacity: 1;
+    }
+
+    .overlay-text {
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      transform: translateY(8px);
+      transition: transform 0.4s ease;
+    }
+
+    .overlay-linkedin {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 12px;
+      font-weight: 500;
+      transform: translateY(8px);
+      transition: transform 0.4s ease 0.05s;
+    }
+
+    .overlay-linkedin svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .leader-card:hover .overlay-text,
+    .leader-card:hover .overlay-linkedin {
+      transform: translateY(0);
+    }
+
+    /* ============================
+       CARD CONTENT
+       ============================ */
+    .leader-info {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .leader-name {
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+      position: relative;
+      display: inline-block;
+      transition: color var(--transition);
+    }
+
+    .leader-name::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background: var(--gradient);
+      border-radius: 2px;
+      transition: width 0.35s ease;
+    }
+
+    .leader-card:hover .leader-name {
+      color: var(--primary);
+    }
+
+    .leader-card:hover .leader-name::after {
+      width: 100%;
+    }
+
+    .leader-position {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .leader-desc {
+      font-size: 13.5px;
+      color: var(--text-light);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    /* ============================
+       LINKEDIN ICON
+       ============================ */
+    .leader-social {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .leader-social-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--bg-light);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-light);
+      transition: all var(--transition);
+      position: relative;
+    }
+
+    .leader-social-icon svg {
+      width: 16px;
+      height: 16px;
+      transition: all var(--transition);
+    }
+
+    /* Tooltip */
+    .leader-social-icon::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: calc(100% + 8px);
+      left: 50%;
+      transform: translateX(-50%) translateY(4px);
+      background: var(--text);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 5px 10px;
+      border-radius: 6px;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.25s ease;
+    }
+
+    .leader-social-icon::before {
+      content: '';
+      position: absolute;
+      bottom: calc(100% + 2px);
+      left: 50%;
+      transform: translateX(-50%);
+      border: 4px solid transparent;
+      border-top-color: var(--text);
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .leader-card:hover .leader-social-icon::after,
+    .leader-card:hover .leader-social-icon::before {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .leader-card:hover .leader-social-icon {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+      transform: scale(1.1) rotate(3deg);
+    }
+
+    .leader-social-icon.email-icon:hover {
+      background: var(--secondary);
+      border-color: var(--secondary);
+    }
+
+    /* ============================
+       SCROLL ANIMATIONS
+       ============================ */
+    .leader-card {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .leader-card.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Image reveal */
+    .leader-img {
+      opacity: 0;
+      transform: scale(1.08);
+      transition: opacity 0.6s ease, transform 0.6s ease, filter 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .leader-card.revealed .leader-img {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .leader-card:hover .leader-card.revealed .leader-img {
+      transform: scale(1.05);
+    }
+
+    /* ============================
+       RESPONSIVE
+       ============================ */
+    @media (max-width: 1024px) {
+      .leadership-section {
+        padding: 100px 0;
+      }
+
+      .leaders-grid {
+        gap: 20px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .leader-card {
+        padding: 20px;
+      }
+
+      .leader-name {
+        font-size: 17px;
+      }
+
+      .leader-desc {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============================
+     LEADERSHIP SECTION
+     ============================ -->
+  <section class="leadership-section" aria-labelledby="leadership-title">
+    <div class="leadership-container">
+
+      <!-- Header -->
+      <div class="leadership-header">
+        <p class="leadership-label">Our Leaders</p>
+        <h2 class="leadership-title" id="leadership-title">
+          Meet the People Behind <span class="gradient-text">ZenLyft</span>
+        </h2>
+        <p class="leadership-desc">
+          The people driving innovation, engineering excellence, and intelligent technology solutions.
+        </p>
+      </div>
+
+      <!-- Grid (populated by JS) -->
+      <div class="leaders-grid" id="leadersGrid"></div>
+
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      'use strict';
+
+      // ============================
+      // LEADER DATA
+      // ============================
+      const leaders = [
+        {
+          name: "Niresh senthoor",
+          position: "CEO & Founder",
+          image: "./assets/logo/NireshSenthoor.jpeg",
+          linkedin: "https://www.linkedin.com/in/niresh-senthoor/"
+        },
+        {
+          name: "Sanjay",
+          position: "R&D & Co-Founder",
+          image: "./assets/logo/sanjay.jpeg",
+          linkedin: "https://www.linkedin.com/in/sanjay-s-018-code/"
+        },
+        {
+          name: "Pravinraj Raja",
+          position: "CTO & Co-Founder",
+          image: "./assets/logo/pravinraj.jpeg",
+          linkedin: "https://www.linkedin.com/in/pravinrajraja/"
+        },
+      ];
+
+      // ============================
+      // SVG ICONS
+      // ============================
+      const linkedinSVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>`;
+
+      const emailSVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>`;
+
+      const arrowSVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>`;
+
+      // ============================
+      // RENDER CARDS
+      // ============================
+      const grid = document.getElementById('leadersGrid');
+
+      leaders.forEach(function (leader, index) {
+        const card = document.createElement('a');
+        card.className = 'leader-card';
+        card.href = leader.linkedin;
+        card.target = '_blank';
+        card.rel = 'noopener noreferrer';
+        card.setAttribute('aria-label', 'View ' + leader.name + "'s LinkedIn profile");
+        card.style.transitionDelay = (index * 100) + 'ms';
+
+        card.innerHTML = `
+      <div class="leader-img-wrap loading">
+        <img
+          class="leader-img"
+          src="${leader.image}"
+          alt="${leader.name} - ${leader.position}"
+          loading="lazy"
+          onload="this.parentElement.classList.remove('loading');this.parentElement.classList.add('loaded');"
+          onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27400%27 viewBox=%270 0 400 400%27%3E%3Crect width=%27400%27 height=%27400%27 fill=%27%23F8F9FC%27/%3E%3Ctext x=%27200%27 y=%27210%27 text-anchor=%27middle%27 font-family=%27Arial%27 font-size=%2748%27 fill=%27%2343377F%27 font-weight=%27bold%27%3E${leader.name.charAt(0)}%3C/text%3E%3C/svg%3E';this.parentElement.classList.remove('loading');this.parentElement.classList.add('loaded');"
+        />
+        <div class="leader-img-overlay">
+          <span class="overlay-text">View Profile ${arrowSVG}</span>
+          <span class="overlay-linkedin">
+            ${linkedinSVG}
+            LinkedIn
+          </span>
+        </div>
+      </div>
+      <div class="leader-info">
+        <h3 class="leader-name">${leader.name}</h3>
+        <p class="leader-position">${leader.position}</p>
+        <p class="leader-desc">${leader.description}</p>
+        <div class="leader-social">
+          <span class="leader-social-icon" data-tooltip="View LinkedIn Profile" aria-hidden="true">
+            ${linkedinSVG}
+          </span>
+          ${leader.email ? `
+          <span class="leader-social-icon email-icon" data-tooltip="Send Email" aria-hidden="true">
+            ${emailSVG}
+          </span>
+          ` : ''}
+        </div>
+      </div>
+    `;
+
+        grid.appendChild(card);
+      });
+
+      // ============================
+      // SCROLL REVEAL (Intersection Observer)
+      // ============================
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('revealed');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.15,
+          rootMargin: '0px 0px -40px 0px'
+        });
+
+        document.querySelectorAll('.leader-card').forEach(function (card) {
+          observer.observe(card);
+        });
+      } else {
+        document.querySelectorAll('.leader-card').forEach(function (card) {
+          card.classList.add('revealed');
+        });
+      }
+
+      // ============================
+      // SUBTLE MOUSE PARALLAX
+      // ============================
+      document.querySelectorAll('.leader-card').forEach(function (card) {
+        card.addEventListener('mousemove', function (e) {
+          const rect = this.getBoundingClientRect();
+          const x = (e.clientX - rect.left) / rect.width - 0.5;
+          const y = (e.clientY - rect.top) / rect.height - 0.5;
+          const img = this.querySelector('.leader-img');
+          if (img) {
+            img.style.transform = 'scale(1.05) translate(' + (x * 6) + 'px, ' + (y * 6) + 'px)';
+          }
+        });
+
+        card.addEventListener('mouseleave', function () {
+          const img = this.querySelector('.leader-img');
+          if (img) {
+            img.style.transform = 'scale(1)';
+          }
+        });
+      });
+
+    })();
+  </script>
+
+</body>
+
+</html>
