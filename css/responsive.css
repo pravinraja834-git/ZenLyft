@@ -291,9 +291,18 @@
   }
 
   /* Hero */
+  .hero {
+    padding: 80px 0 40px;
+  }
+
   .hero-heading {
     font-size: 40px;
     letter-spacing: -0.03em;
+  }
+
+  .hero-description {
+    font-size: 15px;
+    max-width: 100%;
   }
 
   .hero-float-card {
@@ -301,8 +310,22 @@
   }
 
   .hero-stats {
-    gap: 24px;
+    gap: 20px;
     flex-wrap: wrap;
+  }
+
+  .hero-stat-num {
+    font-size: 24px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    max-width: 320px;
   }
 
   /* Services */
@@ -324,17 +347,24 @@
   /* Industries */
   .industries-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 
   /* Portfolio */
   .portfolio-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .portfolio-filter {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   /* Tech */
   .tech-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    gap: 12px;
   }
 
   /* Process line */
@@ -343,22 +373,24 @@
   }
 
   .process-step {
-    gap: 20px;
+    gap: 16px;
   }
 
   .process-step-num {
-    width: 60px;
-    height: 60px;
-    font-size: 16px;
+    width: 56px;
+    height: 56px;
+    font-size: 15px;
+    min-width: 56px;
   }
 
   /* Testimonials */
   .testimonial-inner {
-    padding: 32px 24px;
+    padding: 28px 20px;
   }
 
   .testimonial-quote {
-    font-size: var(--body);
+    font-size: 15px;
+    line-height: 1.7;
   }
 
   /* Stats */
@@ -368,7 +400,7 @@
   }
 
   .stat-card {
-    padding: 20px;
+    padding: 20px 16px;
   }
 
   .stat-number {
@@ -381,20 +413,44 @@
     gap: 32px;
   }
 
+  .footer-brand {
+    text-align: center;
+  }
+
+  .footer-brand p {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
   .footer-bottom {
     flex-direction: column;
     text-align: center;
     gap: 12px;
+    padding: 20px 0;
   }
 
   /* Section header */
   .section-header {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
+  }
+
+  .section-title {
+    margin-bottom: 12px;
+  }
+
+  .section-subtitle {
+    font-size: 15px;
+    max-width: 100%;
   }
 
   /* CTA */
   .cta-title {
     font-size: var(--h3);
+    letter-spacing: -0.02em;
+  }
+
+  .cta-text {
+    font-size: 15px;
   }
 
   /* Contact form row */
@@ -404,11 +460,21 @@
   }
 
   .contact-form-wrap {
-    padding: 28px 20px;
+    padding: 24px 20px;
   }
 
   /* Buttons */
   .hero-actions .btn-lg {
+    padding: 14px 28px;
+    font-size: 15px;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  .btn-lg {
     padding: 14px 28px;
     font-size: 15px;
   }
@@ -423,8 +489,8 @@
 
   /* Toast */
   .toast {
-    right: 20px;
-    left: 20px;
+    right: 16px;
+    left: 16px;
     bottom: 80px;
     transform: translateY(calc(100% + 80px));
   }
@@ -435,12 +501,140 @@
 
   /* Page hero */
   .page-hero {
-    padding: 120px 0 60px;
+    padding: 100px 0 50px;
   }
 
   .page-hero-title {
     font-size: var(--h1);
-    letter-spacing: -1px;
+    letter-spacing: -0.03em;
+  }
+
+  .page-hero-subtitle {
+    font-size: 15px;
+  }
+
+  /* About page */
+  .about-grid {
+    gap: 40px;
+  }
+
+  .about-value-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .about-value-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Values grid */
+  .values-grid {
+    gap: 16px;
+  }
+
+  .value-card {
+    padding: 24px 20px;
+  }
+
+  .value-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .value-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .value-title {
+    font-size: 16px;
+  }
+
+  .value-desc {
+    font-size: 13px;
+  }
+
+  /* Leadership */
+  .leadership-section {
+    padding: 60px 0;
+  }
+
+  .leadership-header {
+    margin-bottom: 32px;
+  }
+
+  .leader-card {
+    padding: 16px;
+  }
+
+  .leader-name {
+    font-size: 16px;
+  }
+
+  .leader-position {
+    font-size: 11px;
+  }
+
+  /* Achievements */
+  .achievement-item {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .achievement-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+
+  .achievement-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .achievement-item strong {
+    font-size: 14px;
+  }
+
+  .achievement-item p {
+    font-size: 13px;
+  }
+
+  /* Service detail */
+  .service-detail-section {
+    padding: 60px 0;
+  }
+
+  .service-detail-grid {
+    gap: 32px;
+  }
+
+  .service-feature-list li {
+    font-size: 14px;
+  }
+
+  .service-visual-box {
+    padding: 24px;
+  }
+
+  /* Job cards */
+  .job-card {
+    padding: 24px 20px;
+  }
+
+  .job-title {
+    font-size: 17px;
+  }
+
+  .job-meta {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .job-tag {
+    font-size: 11px;
+    padding: 4px 10px;
   }
 }
 
@@ -451,8 +645,13 @@
     --h1: 30px;
     --h2: 26px;
     --h3: 22px;
-    --section-py: 50px;
+    --h4: 18px;
+    --section-py: 48px;
     --container-pad: 16px;
+  }
+
+  .hero {
+    padding: 72px 0 32px;
   }
 
   .hero-heading {
@@ -460,13 +659,28 @@
     letter-spacing: -0.025em;
   }
 
+  .hero-description {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+
   .section-title {
     font-size: 26px;
+    letter-spacing: -0.02em;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
   }
 
   .btn-lg {
-    padding: 14px 24px;
+    padding: 12px 24px;
     font-size: 14px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 13px;
   }
 
   .hero-actions {
@@ -479,22 +693,34 @@
     max-width: 280px;
   }
 
+  .hero-stats {
+    gap: 16px;
+  }
+
+  .hero-stat-num {
+    font-size: 22px;
+  }
+
+  .hero-stat-label {
+    font-size: 11px;
+  }
+
   .industries-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    gap: 10px;
   }
 
   .tech-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+    gap: 10px;
   }
 
   .portfolio-filter {
-    gap: 8px;
+    gap: 6px;
   }
 
   .filter-btn {
-    padding: 6px 14px;
+    padding: 6px 12px;
     font-size: 12px;
   }
 
@@ -508,12 +734,196 @@
   }
 
   .stat-number {
-    font-size: 28px;
+    font-size: 26px;
+  }
+
+  .stat-card {
+    padding: 16px 12px;
   }
 
   .about-value-item {
     flex-direction: column;
     gap: 12px;
+  }
+
+  /* Footer */
+  .footer-col-title {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+
+  .footer-links a {
+    font-size: 13px;
+  }
+
+  .footer-newsletter-text {
+    font-size: 13px;
+  }
+
+  /* Page hero */
+  .page-hero {
+    padding: 88px 0 40px;
+  }
+
+  .page-hero-title {
+    font-size: 30px;
+  }
+
+  .page-hero-subtitle {
+    font-size: 14px;
+  }
+
+  /* Leadership */
+  .leadership-section {
+    padding: 48px 0;
+  }
+
+  .leadership-header {
+    margin-bottom: 24px;
+  }
+
+  .leadership-title {
+    font-size: 26px;
+  }
+
+  .leadership-desc {
+    font-size: 14px;
+  }
+
+  .leader-card {
+    padding: 16px;
+  }
+
+  .leader-name {
+    font-size: 15px;
+  }
+
+  .leader-position {
+    font-size: 11px;
+  }
+
+  /* Values */
+  .value-card {
+    padding: 20px 16px;
+  }
+
+  .value-title {
+    font-size: 15px;
+  }
+
+  .value-desc {
+    font-size: 12px;
+  }
+
+  /* Achievements */
+  .achievement-item {
+    padding: 14px;
+  }
+
+  .achievement-item strong {
+    font-size: 13px;
+  }
+
+  .achievement-item p {
+    font-size: 12px;
+  }
+
+  /* Service detail */
+  .service-detail-section {
+    padding: 48px 0;
+  }
+
+  .service-detail-grid {
+    gap: 24px;
+  }
+
+  .service-feature-list {
+    margin: 16px 0;
+    gap: 10px;
+  }
+
+  .service-feature-list li {
+    font-size: 13px;
+    gap: 10px;
+  }
+
+  .service-feature-list svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .service-visual-box {
+    padding: 20px;
+    border-radius: var(--radius-xl);
+  }
+
+  /* Job cards */
+  .job-card {
+    padding: 20px 16px;
+  }
+
+  .job-title {
+    font-size: 16px;
+  }
+
+  .job-meta {
+    font-size: 12px;
+  }
+
+  .job-tag {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+
+  /* About */
+  .about-grid {
+    gap: 32px;
+  }
+
+  .about-title {
+    font-size: 26px;
+  }
+
+  .about-text {
+    font-size: 14px;
+  }
+
+  /* Contact */
+  .contact-grid {
+    gap: 32px;
+  }
+
+  .contact-form-wrap {
+    padding: 20px 16px;
+  }
+
+  /* CTA */
+  .cta-section {
+    padding: 48px 0;
+  }
+
+  .cta-title {
+    font-size: 22px;
+  }
+
+  .cta-text {
+    font-size: 14px;
+  }
+
+  /* Process */
+  .process-step-num {
+    width: 48px;
+    height: 48px;
+    font-size: 14px;
+    min-width: 48px;
+  }
+
+  .process-step-title {
+    font-size: 15px;
+  }
+
+  .process-step-desc {
+    font-size: 13px;
   }
 }
 
