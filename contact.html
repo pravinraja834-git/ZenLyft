@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us : ZenLyft</title>
+  <meta name="description" content="Get in touch with ZenLyft for business inquiries, partnerships, product discussions, careers, or general inquiries." />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages/inner.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header role="banner">
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="container nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="ZenLyft homepage">
+          <img src="./Images/ZenLyft__logo.png" alt="ZenLyft Logo" class="nav__logo-img" />
+          <span class="nav__logotype">ZenLyft</span>
+        </a>
+
+        <div class="nav__links">
+          <a href="index.html" class="nav__link">Home</a>
+          <a href="about.html" class="nav__link">About</a>
+          <a href="what-we-build.html" class="nav__link">What We Build</a>
+          <a href="products.html" class="nav__link">Products</a>
+          <a href="careers.html" class="nav__link">Careers</a>
+          <a href="contact.html" class="nav__link nav__link--active">Contact</a>
+        </div>
+
+        <div class="nav__actions">
+          <a href="products.html" class="btn btn--primary">Get Started</a>
+          <button class="nav__hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="nav__drawer" id="mobile-drawer" aria-label="Mobile navigation">
+      <nav class="nav__drawer-links">
+        <a href="index.html" class="nav__drawer-link">Home</a>
+        <a href="about.html" class="nav__drawer-link">About</a>
+        <a href="what-we-build.html" class="nav__drawer-link">What We Build</a>
+        <a href="products.html" class="nav__drawer-link">Products</a>
+        <a href="careers.html" class="nav__drawer-link">Careers</a>
+        <a href="contact.html" class="nav__drawer-link nav__drawer-link--active">Contact</a>
+      </nav>
+      <div class="nav__drawer-actions">
+        <a href="products.html" class="btn btn--primary btn--full">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div class="container">
+        <div class="page-header__inner">
+          <div class="eyebrow">Get in Touch</div>
+          <h1 class="page-header__title">Let's build something meaningful.</h1>
+          <p class="page-header__desc">
+            Whether you want to explore business opportunities, discuss products, or ask questions, we would love to hear from you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM & INFORMATION -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div class="contact-info reveal">
+            <div class="contact-info-item">
+              <div class="contact-info-item__label">Inquiry Types</div>
+              <div class="contact-info-item__val">
+                Business inquiries &bull; Partnerships &bull; Product discussions &bull; Careers &bull; General inquiries
+              </div>
+            </div>
+
+            <div class="editorial-card">
+              <span class="editorial-card__number">Direct Response</span>
+              <h3 class="editorial-card__title">Thoughtful collaboration</h3>
+              <p class="editorial-card__desc">
+                We review incoming communications promptly and connect you with the appropriate technical or product lead.
+              </p>
+            </div>
+          </div>
+
+          <!-- FORM -->
+          <form class="contact-form reveal delay-1" action="#" method="POST">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Full Name</label>
+              <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email Address</label>
+              <input type="email" id="contact-email" name="email" class="form-input" placeholder="name@company.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-category" class="form-label">Inquiry Category</label>
+              <select id="contact-category" name="category" class="form-select" required>
+                <option value="" disabled selected>Select category</option>
+                <option value="business">Business Inquiries</option>
+                <option value="partnerships">Partnerships</option>
+                <option value="product">Product Discussions</option>
+                <option value="careers">Careers</option>
+                <option value="general">General Inquiries</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" name="message" class="form-textarea" placeholder="How can we help?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="ZenLyft home">
+            <img src="./Images/ZenLyft__logo.png" alt="ZenLyft Logo" class="nav__logo-img" />
+            <span>ZenLyft</span>
+          </a>
+          <p class="footer__tagline">Building technology for what comes next.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Company</h4>
+          <nav class="footer__nav" aria-label="Footer company links">
+            <a href="about.html" class="footer__link">About</a>
+            <a href="what-we-build.html" class="footer__link">What We Build</a>
+            <a href="products.html" class="footer__link">Products</a>
+            <a href="careers.html" class="footer__link">Careers</a>
+            <a href="contact.html" class="footer__link">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer__heading">Legal</h4>
+          <nav class="footer__nav" aria-label="Footer legal links">
+            <a href="privacy.html" class="footer__link">Privacy Policy</a>
+            <a href="terms.html" class="footer__link">Terms of Service</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 ZenLyft Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+/* ============================================================
+   ZenLyft Official Startup Company Website : Homepage Styles
+   ============================================================ */
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+.hero {
+  padding-top: calc(var(--nav-height) + var(--sp-2));
+  padding-bottom: var(--sp-6);
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+@media (min-width: 992px) {
+  .hero {
+    padding-top: calc(var(--nav-height) + var(--sp-3));
+    padding-bottom: var(--sp-8);
+  }
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-8);
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .hero__grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: var(--sp-8);
+  }
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero__headline {
+  margin-bottom: var(--sp-3);
+  max-width: 640px;
+}
+
+.hero__supporting {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--sp-5);
+  max-width: 580px;
+}
+
+.hero__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+/* ============================================================
+   HERO ECOSYSTEM VISUAL (People -> Ideas -> Tech -> Businesses -> Opportunities)
+   ============================================================ */
+.ecosystem-container {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--sp-5);
+  position: relative;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+}
+
+.ecosystem-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-border-subtle);
+  padding-bottom: var(--sp-3);
+  margin-bottom: var(--sp-4);
+}
+
+.ecosystem-title {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.ecosystem-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  background-color: var(--color-accent-dim);
+  border: 1px solid var(--color-accent-border);
+  padding: 2px 10px;
+  border-radius: 100px;
+}
+
+.ecosystem-badge__dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+}
+
+.ecosystem-flow {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  position: relative;
+}
+
+.ecosystem-node {
+  background-color: var(--color-surface-raised);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  padding: var(--sp-3) var(--sp-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: border-color var(--t-base), background-color var(--t-base), transform var(--t-base);
+  cursor: default;
+}
+
+.ecosystem-node:hover,
+.ecosystem-node--active {
+  border-color: var(--color-accent);
+  background-color: var(--color-surface-hover);
+  transform: translateX(4px);
+}
+
+.ecosystem-node__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.ecosystem-node__step {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  text-transform: uppercase;
+}
+
+.ecosystem-node__name {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.ecosystem-node__desc {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.ecosystem-connector {
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.ecosystem-connector__line {
+  width: 2px;
+  height: 100%;
+  background-color: var(--color-border);
+}
+
+/* ============================================================
+   SECTIONS CUSTOM STYLING
+   ============================================================ */
+/* Vision & Philosophy Editorial Layout */
+.vision-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-4);
+  margin-top: var(--sp-6);
+}
+
+@media (min-width: 768px) {
+  .vision-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--sp-5);
+  }
+}
+
+.vision-block {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  padding: var(--sp-5);
+  transition: border-color var(--t-base), transform var(--t-base), box-shadow var(--t-base);
+}
+
+.vision-block:hover {
+  border-color: var(--color-accent);
+  border-left-color: var(--color-accent-light);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(55, 48, 163, 0.08);
+}
+
+.vision-block__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--sp-2);
+}
+
+.vision-block__text {
+  font-size: 0.98rem;
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+}
+
+/* Technology Pillars Layout */
+.tech-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-top: var(--sp-4);
+}
+
+.tech-pill {
+  background-color: var(--color-surface-raised);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  transition: border-color var(--t-fast);
+}
+
+.tech-pill:hover {
+  border-color: var(--color-accent-border);
+  color: var(--color-accent);
+}
+
+/* Future Vision Card */
+.future-hero-box {
+  background: linear-gradient(135deg, #EEF2FF 0%, #F8FAFC 100%);
+  border: 1px solid var(--color-accent-border);
+  border-radius: var(--radius-xl);
+  padding: var(--sp-8);
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(55, 48, 163, 0.05);
+}
+
+.future-hero-box__title {
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  margin-bottom: var(--sp-3);
+}
+
+.future-hero-box__desc {
+  font-size: 1.15rem;
+  color: var(--color-text-secondary);
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
